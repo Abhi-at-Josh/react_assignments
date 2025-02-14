@@ -4,13 +4,14 @@ import { useState } from 'react'
 import './components/Todo'
 import './App.css'
 import Todo from './components/Todo'
-
+import FetchData from './components/Fetch'
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-    <Todo/>
+    <FetchData/>  
+    {/* <Todo/> */}
     </>
     // <>
     //   <div>
