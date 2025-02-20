@@ -1,11 +1,15 @@
-import Todo from './components/Todo'
-import FetchData from './components/Fetch'
-import './App.css'
+import AddTodo from "./components/AddTodo"
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import DisplayTodo from "./components/DisplayTodo";
 function App() {
   return (
     <>
-    <FetchData/>  
-    {/* <Todo/> */}
+     <Router>
+      <Routes>
+        <Route path='/' element={<AddTodo/>}  />
+        <Route path='display' element={<DisplayTodo/>}/>
+      </Routes>
+     </Router>
     </>
   )
 }
